@@ -40,10 +40,11 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 
 ```
-** Check output using below command **
+**Check output using below command**
+
 ```docker-compose --version```
 
-** output **
+**Output**
 
 ```docker-compose version 1.18.0, build 8dd22a9``` 
 
