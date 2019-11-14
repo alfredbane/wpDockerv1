@@ -1,13 +1,15 @@
 # wpDockerv1
 Docker version for installing wordpress
 
-## Install WordPress using DOcker compose
+## Install WordPress using docker-compose
 
-keep the docker compose file in your project folder and run below in terminal
+Keep the docker compose file in your project folder and run below in terminal
 
 ```
 cd [project folder]
 docker-compose up
+
+```
 
 **_If docker is not yet installed on your sytem look below_**
 
