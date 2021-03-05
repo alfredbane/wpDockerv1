@@ -1,4 +1,4 @@
-version: '3'
+version: '3.2'
 
 services:
   db:
@@ -7,10 +7,10 @@ services:
       - db_data:/var/lib/mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: somewordpress
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: mmrsdevwp
+      MYSQL_DATABASE: mmrsdevwp
+      MYSQL_USER: mmrsdev
+      MYSQL_PASSWORD: mmrsdevdckrprttype
 
   wordpress:
     depends_on:
@@ -21,8 +21,8 @@ services:
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_USER: mmrsdev
+      WORDPRESS_DB_PASSWORD: mmrsdevdckrprttype
       WORDPRESS_CONFIG_EXTRA: define('SCRIPT_DEBUG', true);
 
     working_dir: /var/www/html/
